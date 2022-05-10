@@ -1,0 +1,79 @@
+:root {
+  --bg-color:#fff;
+  --text-color:#000;
+}
+
+/* Reset Css */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+::-webkit-scrollbar {
+  width: .8rem;
+  background-color: #6f0000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  letter-spacing: .1rem;
+  font-weight: 300;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  font-size: 1.4rem;
+  width: 100%;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #6f0000;
+  color: #fff;
+  padding: 0 2rem;
+  -webkit-box-shadow: 0 0 2px 2px black;
+          box-shadow: 0 0 2px 2px black;
+  position: fixed;
+  top: 0;
+}
+
+nav > h1 {
+  font-size: 1.6rem;
+}
+
+main {
+  padding: 5rem .5rem;
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+main p {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
