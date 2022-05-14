@@ -1,0 +1,254 @@
+@import url(c:\xampp\htdocs\Sonic-M-Seri\Sonic-m-5\CodeMirror\lib\codemirror.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input, button, select {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+.colorpick-eyedropper-input-trigger {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#cursor {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(../image/cursor.png);
+  display: inline-block;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-15%, -15%) rotate(25deg);
+          transform: translate(-15%, -15%) rotate(25deg);
+  pointer-events: none;
+  z-index: 1000000;
+}
+
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 5rem;
+  overflow: hidden;
+  padding: 0 5rem;
+  border-bottom: 0.1rem solid #0a71fe;
+  background-color: #1a3447;
+  color: #fff;
+}
+
+header .nav {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav button {
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 2rem;
+  border: 0.1rem solid #fff;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+
+main {
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+  overflow: scroll;
+  white-space: initial;
+  margin: 5rem auto 5rem auto;
+  max-width: 90rem;
+  padding: .5rem;
+  min-height: calc(100vh - 20rem);
+}
+
+main .menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0rem;
+}
+
+main .menu button {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 0.1rem solid #000;
+  border-radius: .3rem;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: .5rem;
+}
+
+main .menu input {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: .3rem;
+  border: 0.1rem solid #000;
+  cursor: pointer;
+  margin-right: .5rem;
+}
+
+main .menu select {
+  min-width: 3.5rem;
+  height: 3.5rem;
+  border-radius: .3rem;
+  border: 0.1rem solid #000;
+  cursor: pointer;
+  margin-right: .5rem;
+}
+
+main .container {
+  width: 100%;
+  height: auto;
+}
+
+main .container .area-container {
+  background-color: #1a3447;
+  padding: 5rem;
+}
+
+main .container .area-container .area {
+  width: 100%;
+  overflow: hidden;
+  border-radius: .3rem;
+  -webkit-box-shadow: 1rem 1rem 1rem rgba(255, 255, 255, 0.5);
+          box-shadow: 1rem 1rem 1rem rgba(255, 255, 255, 0.5);
+}
+
+main .container .area-container .area #myTextArea {
+  width: 100%;
+  height: auto;
+  border-radius: .3rem;
+  white-space: unset;
+}
+
+.CodeMirror {
+  min-height: 50rem;
+}
+
+.CodeMirror-vscrollbar {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  overflow: hidden;
+  background-color: #1a3447;
+  color: #fff;
+  border-top: 0.1rem solid #0a71fe;
+  text-align: center;
+}
+
+.error {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #1a3447;
+  color: #fff;
+  font-size: 1.6rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 50rem) {
+  .error {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 100000000;
+  }
+  .error a {
+    text-align: center;
+    color: #fff;
+    line-height: 200%;
+  }
+  .error a:first-child {
+    margin-bottom: 2rem;
+    border-bottom: 0.1rem solid #fff;
+  }
+}
+/*# sourceMappingURL=style.css.map */

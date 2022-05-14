@@ -1,0 +1,183 @@
+@import '../../CodeMirror/lib/codemirror.css';
+// @import '../../CodeMirror/theme/xq-light.css';
+
+@import '_reset.scss';
+@import '_variable.scss';
+
+
+// Style ------------------------- Shukurov Mushvig
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-size: 1.5rem;
+    font-family: 'Roboto Mono', monospace;
+    // cursor: none;
+    user-select: none;
+
+}
+
+#cursor {
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url(../image/cursor.png);
+    display: inline-block;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-15%, -15%) rotate(25deg);
+    pointer-events: none;
+    z-index: 1000000;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 5rem;
+    overflow: hidden;
+    padding: 0 5rem;
+    border-bottom: .1rem solid $main-color;
+    background-color: $ub-color;
+    color: $bg-dark-text;
+
+    .nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            width: 3.5rem;
+            height: 3.5rem;
+            font-size: 2rem;
+            border: .1rem solid $bg-dark-text;
+            border-radius: .3rem;
+            cursor: pointer;
+        }
+    }
+}
+
+main {
+    user-select: text;
+    overflow: scroll;
+    white-space: initial;
+    margin: 5rem auto 5rem auto;
+    max-width: 90rem;
+    padding: .5rem;
+    min-height: calc(100vh - 20rem);
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 2rem 0rem;
+
+        button {
+            width: 3.5rem;
+            height: 3.5rem;
+            border: .1rem solid $bg-dark-color;
+            border-radius: .3rem;
+            font-size: 2rem;
+            cursor: pointer;
+            margin-right: .5rem;
+        }
+
+        input {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: .3rem;
+            border: .1rem solid $bg-dark-color;
+            cursor: pointer;
+            margin-right: .5rem;
+        }
+        select{
+            min-width: 3.5rem;
+            height: 3.5rem;
+            border-radius: .3rem;
+            border: .1rem solid $bg-dark-color;
+            cursor: pointer;
+            margin-right: .5rem;
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+
+        .area-container {
+            background-color: $ub-color;
+            padding: 5rem;
+
+            .area {
+                width: 100%;
+                overflow: hidden;
+
+                border-radius: .3rem;
+                box-shadow: 1rem 1rem 1rem rgba(255, 255, 255, 0.5);
+
+                #myTextArea {
+                    width: 100%;
+                    height: auto;
+                    border-radius: .3rem;
+                    white-space: unset;
+                }
+            }
+        }
+    }
+}
+.CodeMirror{
+    min-height: 50rem;
+}
+.CodeMirror-vscrollbar{
+    display: none;
+}
+footer {
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    overflow: hidden;
+    background-color: $ub-color;
+    color: $bg-dark-text;
+    border-top: .1rem solid $main-color;
+    text-align: center;
+}
+.error{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $ub-color;
+    color: $bg-dark-text;
+    font-size: 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+@media only screen and (max-width:50rem){
+    .error{
+        display: flex;
+        z-index: 100000000;
+        a{
+            text-align: center;
+            color: $bg-dark-text;
+            line-height: 200%;
+            &:first-child{
+                margin-bottom: 2rem;
+                border-bottom: .1rem solid $bg-dark-text;
+            }
+        }
+    }
+}

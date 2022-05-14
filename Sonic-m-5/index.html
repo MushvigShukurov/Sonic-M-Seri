@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Code | Shukurov Mushvig</title>
+    <link rel="shortcut icon" href="src/image/planet-earth.png" type="image/png">
+    <!-- Mirror Css -->
+    <link rel="stylesheet" href="./CodeMirror/lib/codemirror.css">
+    <link rel="stylesheet" href="./CodeMirror/theme/base16-dark.css">
+    <!-- highlightjs -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.5.1/styles/tokyo-night-dark.css"> -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/styles/default.min.css"> -->
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Style -->
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <div class="error">
+        <a href="#">Telefon Üçün <br> Dizayn Edilməyib</a>
+        <a href="https://www.youtube.com/channel/UCv1cilRYda9e8_07YWn4pIg">
+            <i class="fab fa-youtube">
+            </i>
+            Youtube
+        </a>
+        <a href="https://instagram.com/mushvigsh"><i class="fab fa-instagram"></i>
+            İnstagram</a>
+        <a href="https://github.com/MushvigShukurov"><i class="fab fa-github"></i>
+            Github</a>
+    </div>
+    <!-- <span id="cursor">
+    </span> -->
+    <header>
+        <div class="nav">
+            <button onclick="(window.location.href = 'https://www.youtube.com/channel/UCv1cilRYda9e8_07YWn4pIg')"><i
+                    class="fab fa-youtube"></i></button>
+            <a href="https://instagram.com/mushvigsh">Shukurov Mushvig</a>
+            <button onclick="window.location.href = 'https://github.com/MushvigShukurov'"><i
+                    class="fab fa-github"></i></button>
+        </div>
+    </header>
+    <main>
+
+        <div class="menu">
+            <button id="lineNumbers">
+                <i class="fas fa-list-ol"></i>
+            </button>
+            <button id="download" onclick="exportImage()">
+                <i class="fas fa-download"></i>
+            </button>
+            <input type="color" id="themeColor" value="#1a3447" onchange="changeTheme(this.value)">
+            <select id="codeMode">
+                <option value="php" selected>PHP</option>
+                <option value="javascrit">Javascript</option>
+                <option value="css">Css</option>
+                <option value="scss">Scss</option>
+                <option value="xml">XML</option>
+                <option value="sql">SQL</option>
+                <option value="django">Django</option>
+                <option value="python">Python</option>
+            </select>
+
+        </div>
+        <div class="container">
+            <div class="area-container" id="areaContainer">
+                <div class="area">
+                    <textarea id="myTextArea" style="border-radius: .3rem;"><?php <!---#IG : mushvigsh---> ?></textarea>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <i class="far fa-copyright"></i> Shukurov Mushvig <span id="date">2022</span>
+    </footer>
+    <!-- Line Numbers -->
+    <!-- <script
+        src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/src/highlightjs-line-numbers.min.js"></script> -->
+    <!-- Code Mirror -->
+    <script src="CodeMirror/lib/codemirror.js"></script>
+    <script src="CodeMirror/mode/clike/clike.js"></script>
+    <script src="CodeMirror/addon/edit/matchbrackets.js"></script>
+    <script src="CodeMirror/mode/php/php.js"></script>
+    <script src="CodeMirror/mode/javascript/javascript.js"></script>
+    <script src="CodeMirror/mode/css/css.js"></script>
+    <script src="CodeMirror/mode/sass/sass.js"></script>
+    <script src="CodeMirror/mode/django/django.js"></script>
+    <script src="CodeMirror/mode/python/python.js"></script>
+    <script src="CodeMirror/mode/xml/xml.js"></script>
+    <script src="CodeMirror/mode/sql/sql.js"></script>
+    <!-- Canvas -->
+    <script src="src/js/screen.js"></script>
+    <!-- Hljs script -->
+    <!-- <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script> -->
+    <!-- Js -->
+    <script src="src/js/app.js"></script>
+    <!-- <script>
+        // Highlighted js
+        // hljs.initHighlightingOnLoad();
+        // hljs.initLineNumbersOnLoad();
+    </script> -->
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
