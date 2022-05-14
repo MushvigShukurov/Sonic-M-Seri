@@ -1,0 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+button, input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  letter-spacing: .1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 114rem;
+  margin: 0rem auto;
+  padding: 5rem .5rem;
+}
+
+.container h1 {
+  font-size: 2.4rem;
+  width: 20rem;
+  margin: 0rem auto;
+  color: #203859;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.container h1:hover::before {
+  bottom: -20%;
+}
+
+.container h1::before {
+  content: "";
+  width: 20%;
+  height: .3rem;
+  background-color: #203859;
+  border-radius: .3rem;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  bottom: -30%;
+  left: 50%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.container .group {
+  width: 100%;
+  height: 3.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .group button {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #203859;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.container .group button:hover {
+  background-color: rgba(32, 56, 89, 0.2);
+  color: #000;
+}
+
+.container .group input {
+  width: calc(100% - 4.5rem);
+  height: 2.5rem;
+  border: 0.1rem solid #203859;
+  font-size: 1.4rem;
+  padding: 0rem .5rem;
+  color: #203859;
+}
+
+.container .group input:focus {
+  background-color: rgba(32, 56, 89, 0.2);
+}
+
+.container #todos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3rem;
+}
+
+.container #todos li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .3rem .5rem;
+  line-height: 200%;
+}
+
+.container #todos li:nth-child(odd) {
+  background-color: rgba(32, 56, 89, 0.2);
+}
+
+.container #todos li:not(:first-child) {
+  border-top: 0.1rem solid #203859;
+}
+
+.container #todos li i {
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #203859;
+}
+
+.container #todos li i:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.container #todos li p {
+  width: calc(100% - 4.5rem);
+  font-size: 1.4rem;
+}
+
+.container #todos li p::first-letter {
+  font-size: 2.4rem;
+  color: #000;
+  margin-right: .5rem;
+}
+/*# sourceMappingURL=style.css.map */
