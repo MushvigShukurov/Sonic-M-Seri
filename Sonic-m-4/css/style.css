@@ -1,0 +1,42 @@
+/* Reset Css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img{
+    display: block;
+    width: 30rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: animate 5s ease-in-out infinite;
+    filter: drop-shadow(0 0 40px rgba(229, 255, 0, 0.641));
+}
+
+@keyframes animate{
+    0%,100%{
+        left: 50%;
+        top: 50%;
+    }
+    25%{
+        left: 45%;
+    }
+    50%{
+        top: 30%;
+    }
+    75%{
+        left: 55%;
+    }
+}
