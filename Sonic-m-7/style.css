@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+}
+
+.card {
+    width: 30rem;
+    height: 50rem;
+    overflow: hidden;
+}
+
+.card:first-child {
+    margin-right: 1rem;
+}
+
+.card-header {
+    width: 100%;
+    height: 10rem;
+
+}
+
+.card-header {
+    text-align: center;
+    border: .1rem solid #006E7F;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-header h3 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+
+}
+
+.card-header p {
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.card-body {
+    border-left: .1rem solid #006E7F;
+    border-right: .1rem solid #006E7F;
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.card-body img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .2s;
+}
+.card:hover .card-body img{
+    transform: scale(1.1);
+}
+.card-footer {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .1rem solid #006E7F;
+    border-top: none;
+}
+
+.card-footer button {
+    width: 6rem;
+    position: relative;
+    color: #fff;
+    height: 3rem;
+    background-color: rgb(10, 113, 254);
+    z-index: 10;
+}
+.card-footer button:hover{
+    cursor: pointer;
+
+}
+.card-footer button:hover::after{
+    display: block;
+}
+.card-footer button::after{
+    display: none;
+    content: "Share";
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 100%;
+    height: 100%;
+    background-color: #006E7F;
+    z-index: 15;
+    line-height: 3rem;
+    text-align: center;
+}
